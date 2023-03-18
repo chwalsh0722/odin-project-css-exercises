@@ -26,4 +26,42 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 200px;
+  height: 200px;
+}
+
+ul {
+  list-style-type: none;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.layout-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Targets all content in center of page */
+.layout-vertical .layout-horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Targets cards within content in center of page */
+.layout-vertical .layout-horizontal .layout-vertical {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
